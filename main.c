@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 struct Circle {
-    int x;
-    int y;
-    int radius;
+    float x;
+    float y;
+    float radius;
 };
 
 struct Circle init_circle(
-        int x,
-        int y,
-        int radius) // Function which returns circle with following parameters
+        float x,
+        float y,
+        float radius) // Function which returns circle with following parameters
 {
     return (struct Circle){.x = x, .y = y, .radius = radius};
 }
