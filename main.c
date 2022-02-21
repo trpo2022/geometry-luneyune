@@ -9,7 +9,10 @@ struct Circle {
 struct Circle init_circle(
         int x,
         int y,
-        int radius); // Function which returns circle with following parameters
+        int radius) // Function which returns circle with following parameters
+{
+    return (struct Circle){.x = x, .y = y, .radius = radius};
+}
 void circle_to_string(
         struct Circle circle,
         char* buffer,
