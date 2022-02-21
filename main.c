@@ -23,10 +23,17 @@ struct Circle string_to_circle(
         int size);            // Function converts WKT-format string into circle
 struct Circle input_circle(); // Function which returns a circle with parameters
                               // writen by user
+
 void print_circle(
         struct Circle circle) // Function which print WKT-format circle
 {
     printf("circle(%.4f %.4f, %.4f)", circle.x, circle.y, circle.radius);
+}
+
+float circle_perimeter(struct Circle circle) // Function which returns a
+                                             // perimeter of given circle
+{
+    return circle.radius * 6.28;
 }
 
 int main()
